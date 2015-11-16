@@ -1,0 +1,243 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#FF0000"
+                android:id="@+id/frameLayoutAustria">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="50dp">
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#FF0000"
+                android:layout_below="@id/frameLayoutAustria"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
+                android:layout_marginTop="20dp"
+                android:id="@+id/frameLayoutPoland">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="#FFFFFF">
+                </FrameLayout>
+            </FrameLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_below="@id/frameLayoutPoland"
+                android:layout_marginTop="20dp"
+                android:id="@+id/tableLayoutItaly">
+                <TableRow>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:background="#008000">
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF">
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FF0000">
+
+                    </FrameLayout>
+                </TableRow>
+            </TableLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#FFFF00"
+                android:layout_below="@id/tableLayoutItaly"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
+                android:layout_marginTop="20dp"
+                android:id="@+id/frameLayoutColombia">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#00008B"
+                    android:layout_marginTop="90dp">
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#FF0000"
+                    android:layout_marginTop="135dp">
+                </FrameLayout>
+            </FrameLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/tableLayoutMadagascar"
+                android:layout_below="@id/frameLayoutColombia"
+                android:layout_marginTop="20dp">
+                <TableRow>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF">
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="#008000">
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:background="#FF0000">
+
+                        </FrameLayout>
+                    </FrameLayout>
+                </TableRow>
+
+            </TableLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#00008B"
+                android:id="@+id/frameLayoutThailand"
+                android:layout_below="@id/tableLayoutMadagascar"
+                android:layout_marginTop="20dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#FF0000">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="30dp">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="120dp">
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#FF0000"
+                    android:layout_marginTop="150dp">
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/tableLayoutDenmark"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/frameLayoutThailand">
+                <TableRow>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_weight="2"
+                        android:background="#FF0000">
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF">
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_weight="4"
+                        android:background="#FF0000">
+                    </FrameLayout>
+                </TableRow>
+                <TableRow>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="4"
+                        android:background="#FFFFFF">
+                    </FrameLayout>
+                </TableRow>
+
+                <TableRow>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_weight="2"
+                        android:background="#FF0000">
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF">
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_weight="4"
+                        android:background="#FF0000">
+                    </FrameLayout>
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>
